@@ -3,9 +3,9 @@
 
 <div class="docs-layout">
   <aside class="sidebar docs-sidebar">
-    <?php if ( is_active_sidebar( 'knowledge_base_sidebar' ) ) : ?>
+    <?php if ( is_active_sidebar( 'kdb-sidebar' ) ) : ?>
       <div class="sidebar-main">
-        <?php dynamic_sidebar( 'knowledge_base_sidebar' ); ?>
+        <?php dynamic_sidebar( 'kdb-sidebar' ); ?>
       </div>
   <?php endif; ?>
   </aside>

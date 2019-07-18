@@ -12,7 +12,7 @@ function knowledge_base_sidebar() {
     register_sidebar(
         array (
             'name' => __( 'knowledge Base Sidebar' ),
-            'id' => 'kdb-base-side-bar',
+            'id' => 'kdb-sidebar',
             'description' => __( 'knowledge Base Sidebar'),
             'before_widget' => '<div class="widget-content">',
             'after_widget' => "</div>",
