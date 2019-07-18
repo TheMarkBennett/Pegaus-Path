@@ -12,8 +12,8 @@ function knowledge_base_sidebar() {
     register_sidebar(
         array (
             'name' => __( 'knowledge Base Sidebar' ),
-            'id' => 'custom-side-bar',
-            'description' => __( 'Custom Sidebar'),
+            'id' => 'kdb_base-side-bar',
+            'description' => __( 'knowledge Base Sidebar'),
             'before_widget' => '<div class="widget-content">',
             'after_widget' => "</div>",
             'before_title' => '<h3 class="widget-title">',
