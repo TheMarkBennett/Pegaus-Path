@@ -3,9 +3,7 @@
 
 <div class="docs-layout">
   <aside class="sidebar docs-sidebar">
-    <?php if ( is_active_sidebar( 'knowledge_base_sidebar' ) ) : ?>
-      <?php dynamic_sidebar( 'knowledge_base_sidebar' ); ?>
-  <?php endif; ?>
+    <?php get_sidebar(); ?>
   </aside>
   <div class="main-content docs-layout-main">
   <article class="<?php echo $post->post_status; ?> post-list-item">
