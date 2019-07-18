@@ -12,7 +12,7 @@ function knowledge_base_sidebar() {
     register_sidebar(
         array (
             'name' => __( 'knowledge Base Sidebar' ),
-            'id' => 'kdb_base-side-bar',
+            'id' => 'kdb-base-side-bar',
             'description' => __( 'knowledge Base Sidebar'),
             'before_widget' => '<div class="widget-content">',
             'after_widget' => "</div>",
@@ -22,3 +22,15 @@ function knowledge_base_sidebar() {
     );
 }
 add_action( 'widgets_init', 'knowledge_base_sidebar' );
+
+function sidebar_widget_init() {
+    register_sidebar( array(
+        'name' => __( 'Main Sidebar'),
+        'id' => 'main_sidebar',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>'
+    ) );
+}
+add_action( 'widgets_init', 'sidebar_widget_init' );
