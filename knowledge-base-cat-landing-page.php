@@ -1,9 +1,13 @@
-<?php /* Template Name: knowledge base Category Template  */ ?>
+<?php /* Template Name: knowledge base Category */ ?>
 <?php get_header(); the_post(); ?>
 
 <div class="docs-layout">
   <aside class="sidebar docs-sidebar">
-    <?php get_sidebar(); ?>
+    <?php if ( is_active_sidebar( 'knowledge_base_sidebar' ) ) : ?>
+      <div class="sidebar-main">
+        <?php dynamic_sidebar( 'knowledge_base_sidebar' ); ?>
+      </div>
+  <?php endif; ?>
   </aside>
   <div class="main-content docs-layout-main">
   <article class="<?php echo $post->post_status; ?> post-list-item">
